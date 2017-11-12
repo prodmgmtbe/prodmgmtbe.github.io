@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                Common
+                                       */
+
+html {
+  background-color: $bg-color;
+  color: $white;
+  font-family: $main-ff;
+  font-size: $root-fs;
+  -webkit-font-smoothing: antialiased;
+}
+
+input::-webkit-input-placeholder {
+  color: $white !important;
+}
+
+input:-moz-placeholder {
+  color: $white !important;  
+}
+
+input::-moz-placeholder {
+  color: $white !important;  
+}
+
+input:-ms-input-placeholder {  
+  color: $white !important;  
+}
+
+b { font-weight: bold; }

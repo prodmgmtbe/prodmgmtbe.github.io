@@ -1,0 +1,26 @@
+/* texts */
+/* colors */
+/* 
+                Common
+                                       */
+html {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
+
+input::-webkit-input-placeholder {
+  color: #ffffff !important; }
+
+input:-moz-placeholder {
+  color: #ffffff !important; }
+
+input::-moz-placeholder {
+  color: #ffffff !important; }
+
+input:-ms-input-placeholder {
+  color: #ffffff !important; }
+
+b {
+  font-weight: bold; }

@@ -1,0 +1,153 @@
+@import 'variables';
+@import 'mixins';
+
+/* 
+                Splash
+                                       */
+
+.c-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .c-header {
+    &__title {
+      color: $blue;
+      font-size: 1.3rem;
+      font-variant: small-caps;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    &__subtitle {
+      font-size: 1.75rem;
+      line-height: 1.5;
+      margin-top: 20px;
+    }
+  }
+
+  a {
+    color: $white;
+    font-weight: bolder;
+    padding-bottom: .3rem;
+    text-decoration: none;
+  }
+
+  footer a {
+    border-bottom: 2px #e8f8ff solid;
+  }
+
+}
+
+.c-image {
+  align-items: flex-end;
+  background-image: url('../images/slide-1.jpg');
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+
+  .c-orb {
+    background-image: url('../images/orb.png');
+    background-size: cover;
+    position: absolute;
+
+    &--one {
+      bottom: 30px;
+      left: -35px;
+
+      height: 220px;
+      width: 220px;
+    }
+
+    &--two {
+      bottom: 320px;
+      left: 450px;
+
+      filter: blur(1px);
+
+      height: 120px;
+      width: 120px;
+    }
+
+    &--three {
+      bottom: 440px;
+      left: 180px;
+      
+      filter: blur(2px);
+
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  .c-caption {
+    width: 100%;
+  }
+}
+
+.c-form {
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #e8f8ff solid;
+    color: $white;
+    font-family: $main-ff;
+    font-size: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: .5rem 0;
+    width: 317px;
+  }
+
+  &__submit {
+    background: $blue;
+    box-shadow: 0 0 0.5rem 0 rgba(0,0,0,.5),
+                0 0 1.5rem .1rem rgba(88,206,252,.25);
+    border: none;
+    border-radius: 40px;
+    color: $white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem 1rem;
+
+    // Alternative, just an icon
+    // background: transparent;
+    // border: none;
+    // border-radius: 40px;
+    // background-image: url(../images/submit.svg);
+    // cursor: pointer;
+    // padding: .5rem 1rem;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // top: -5px;
+    // position: relative;
+  }
+}
+
+
+
+.c-social {
+    height: 1rem;
+    margin-bottom: -.125rem;
+    margin-right: .3rem;
+
+    &--meetup {
+      content: url('../images/meetup.svg');
+    }
+
+    &--facebook {
+      content: url('../images/facebook.svg');
+    }
+
+    &--twitter {
+      content: url('../images/twitter.svg');
+    }
+
+    &--linkedin {
+      content: url('../images/linkedin.svg');
+    }
+  }
