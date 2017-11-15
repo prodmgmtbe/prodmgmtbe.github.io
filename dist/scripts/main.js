@@ -4,9 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
   var orbs = document.getElementsByClassName('c-orb');
   
   var positions = [
-    { bottom: 20, left: -35 },
-    { bottom: 320, left: 450 },
-    { bottom: 440, left: 180 }
+    // in pixels
+    // { bottom: 20, left: -35 },
+    // { bottom: 320, left: 450 },
+    // { bottom: 440, left: 180 }
+
+    // in %
+    { bottom: 4, left: -5},
+    { bottom: 45, left: 70},
+    { bottom: 63, left: 28}
   ];
 
   for (var i = 0; i < orbs.length; i++) {
@@ -20,15 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   var moveX = function(i, orb, mouseX) {
-    var initialX = estate.width/2 + positions[i].left;
-    var delta = (mouseX-initialX)/50/(1+i*5*i);
-    orb.style.left = Math.floor(positions[i].left + delta) + 'px';
+    var initialX = 50 + positions[i].left;
+    var delta = (mouseX/estate.width*100 - initialX) / 15 / (1+i*5);
+    orb.style.left = positions[i].left + delta + '%';
   };
 
   var moveY = function(i, orb, mouseY) {
-    var initialY = estate.height/2 + positions[i].bottom;
-    var delta = (mouseY-initialY)/50/(1+i*i);
-    orb.style.bottom = Math.floor(positions[i].bottom - delta) + 'px';
+    var initialY = positions[i].bottom;
+    var delta = (mouseY/estate.height*100 - initialY) / 15 / (1+i*5);
+    orb.style.bottom = positions[i].bottom - delta + '%';
   };
 
   document.onmousemove = function(event) {

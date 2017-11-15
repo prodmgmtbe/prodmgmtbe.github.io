@@ -18,35 +18,39 @@
 .u-pane {
   width: 50%; }
 
-.u-mt--10 {
-  margin-top: 10px; }
-
-.u-mt--20 {
-  margin-top: 20px; }
-
-.u-mt--60 {
-  margin-top: 60px; }
-
-.u-mt--120 {
-  margin-top: 120px; }
-
-.u-mt--180 {
-  margin-top: 180px; }
-
-.u-mb--60 {
-  margin-bottom: 60px; }
-
-.u-ml--40 {
-  margin-left: 40px; }
-
-.u-mr--40 {
-  margin-right: 40px; }
-
-.u-mr--60 {
-  margin-right: 60px; }
+.u-blue {
+  color: #58CEFD; }
 
 .u-align-right {
   text-align: right; }
 
-.u-blue {
-  color: #58CEFD; }
+.u-link-naked {
+  border-bottom: none !important;
+  text-decoration: none; }
+
+.u-mt--20 {
+  margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .u-mt--10 {
+    margin-top: 10px; }
+  .u-mt--60 {
+    margin-top: 60px; }
+  .u-mt--120 {
+    margin-top: 120px; }
+  .u-mt--180 {
+    margin-top: 180px; }
+  .u-mb--60 {
+    margin-bottom: 60px; }
+  .u-ml--40 {
+    margin-left: 40px; }
+  .u-mr--40 {
+    margin-right: 40px; }
+  .u-mr--60 {
+    margin-right: 60px; } }
+
+.u-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .u-mobile {
+      display: inherit; } }

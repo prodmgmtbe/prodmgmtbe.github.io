@@ -11,6 +11,10 @@ html {
   font-family: $main-ff;
   font-size: $root-fs;
   -webkit-font-smoothing: antialiased;
+
+  @include mobile {
+    font-size: $root-fs-sm;
+  }
 }
 
 input::-webkit-input-placeholder {

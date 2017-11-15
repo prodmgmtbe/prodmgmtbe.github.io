@@ -55,38 +55,42 @@ table {
 .u-pane {
   width: 50%; }
 
-.u-mt--10 {
-  margin-top: 10px; }
-
-.u-mt--20 {
-  margin-top: 20px; }
-
-.u-mt--60 {
-  margin-top: 60px; }
-
-.u-mt--120 {
-  margin-top: 120px; }
-
-.u-mt--180 {
-  margin-top: 180px; }
-
-.u-mb--60 {
-  margin-bottom: 60px; }
-
-.u-ml--40 {
-  margin-left: 40px; }
-
-.u-mr--40 {
-  margin-right: 40px; }
-
-.u-mr--60 {
-  margin-right: 60px; }
+.u-blue {
+  color: #58CEFD; }
 
 .u-align-right {
   text-align: right; }
 
-.u-blue {
-  color: #58CEFD; }
+.u-link-naked {
+  border-bottom: none !important;
+  text-decoration: none; }
+
+.u-mt--20 {
+  margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .u-mt--10 {
+    margin-top: 10px; }
+  .u-mt--60 {
+    margin-top: 60px; }
+  .u-mt--120 {
+    margin-top: 120px; }
+  .u-mt--180 {
+    margin-top: 180px; }
+  .u-mb--60 {
+    margin-bottom: 60px; }
+  .u-ml--40 {
+    margin-left: 40px; }
+  .u-mr--40 {
+    margin-right: 40px; }
+  .u-mr--60 {
+    margin-right: 60px; } }
+
+.u-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .u-mobile {
+      display: inherit; } }
 
 /* texts */
 /* colors */
@@ -175,6 +179,9 @@ html {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased; }
+  @media (max-width: 768px) {
+    html {
+      font-size: 12px; } }
 
 input::-webkit-input-placeholder {
   color: #ffffff !important; }
@@ -210,6 +217,9 @@ b {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 768px) {
+    .c-content {
+      padding: 15rem  2rem 2rem; } }
   .c-content .c-header__title {
     color: #58CEFD;
     font-size: 1.3rem;
@@ -237,25 +247,29 @@ b {
   background-size: cover;
   position: relative;
   overflow-y: hidden; }
+  @media (max-width: 768px) {
+    .c-image {
+      background-image: none;
+      display: none; } }
   .c-image .c-orb {
     background-image: url("../images/orb.png");
     background-size: cover;
     position: absolute; }
     .c-image .c-orb--one {
-      bottom: 30px;
-      left: -35px;
+      bottom: 4%;
+      left: -6%;
       height: 220px;
       width: 220px; }
     .c-image .c-orb--two {
-      bottom: 320px;
-      left: 450px;
+      bottom: 45%;
+      left: 70%;
       -webkit-filter: blur(1px);
               filter: blur(1px);
       height: 120px;
       width: 120px; }
     .c-image .c-orb--three {
-      bottom: 440px;
-      left: 180px;
+      bottom: 63%;
+      left: 28%;
       -webkit-filter: blur(2px);
               filter: blur(2px);
       height: 60px;
@@ -274,6 +288,9 @@ b {
   outline: none;
   padding: .5rem 0;
   width: 317px; }
+  @media (max-width: 768px) {
+    .c-form__input {
+      width: 20rem; } }
 
 .c-form__submit {
   background: #58CEFD;
